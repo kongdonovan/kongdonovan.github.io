@@ -1,0 +1,63 @@
+body {
+  background-color: #0B1328;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+}
+
+img {
+  height: 12em;
+  width: 12em;
+}
+
+header p {
+  font-size: 2.5em;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#inputs {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#inputs p {
+  font-size: 1.75em;
+}
+
+#results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div {
+  text-align: center;
+}
+
+#love {
+  font-size: 2em;
+}
+
+.hidden * {
+  display: none;
+}
+
+.heart {
+  display:inline-block;
+  width: 150px; 
+  aspect-ratio: 1;
+  border-image: radial-gradient(rgba(255, 72, 72, 0.726) 69%,#0000 70%) 84.5% fill/100%;
+  clip-path: polygon(-41% 0,50% 91%, 141% 0);
+}
+
+.heart:hover {
+  cursor: pointer;
+  width: 175px;
+}
+
