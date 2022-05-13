@@ -1,0 +1,107 @@
+/*
+donovan kong
+154ordle
+styles for wordle but worse
+*/
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+#title-header {
+    text-align: center;
+}
+
+#title {
+    margin-top: 0;
+    font-size: 4em;
+    margin-bottom: 0;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.square {
+    height: 3.5em;
+    width: 3.5em;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    margin: 5px;
+}
+
+.square p {
+    margin-top: 0.1em;
+    font-size: 2em;
+}
+
+#keyboard {
+    margin-top: 1em;
+}
+
+.key {
+    height: 3.34em;
+    width: 3em;
+    background-color: rgb(200,200,200);
+    border-radius: 0.3em;
+    text-align: center;
+    margin: 5px;
+}
+
+.key p {
+    font-size: 95%;
+    font-weight: bold;
+}
+
+.specialkey {
+    width: 4em;
+}
+
+.key:hover {
+    background-color: rgb(180,180,180);
+    cursor: pointer;
+}
+
+
+
+.almost {
+    background-color: yellow;
+}
+
+.correct {
+    background-color: rgb(113, 219, 110);
+}
+
+@media (prefers-color-scheme: dark) {
+body {
+    color: rgb(220,220,220);
+    background-color: rgb(40,40,40);
+}
+
+.key {
+    background-color: rgb(20,20,20);
+}
+
+.key p {
+    color: rgb(220,220,220);
+}
+
+.square {
+    border-color: rgb(60,60,60);
+}
+
+.almost {
+    background-color: rgb(155, 155, 0);
+}
+
+.correct {
+    background-color: rgb(44, 138, 44);
+}
+}
+
+.wrong {
+    background-color: rgb(100, 100, 100)
+}

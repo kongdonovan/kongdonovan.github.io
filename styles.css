@@ -1,63 +1,89 @@
+/*
+Donovan Kong
+Personal webpage
+*/
+
 body {
-  background-color: #0B1328;
-  font-family: 'Quicksand', sans-serif;
-  color: white;
+    font-family: 'Raleway', sans-serif;
 }
 
-img {
-  height: 12em;
-  width: 12em;
+body h1 {
+    font-size: 4em;
+    text-align: center;
 }
 
-header p {
-  font-size: 2.5em;
+hr {
+    margin-top: 1.25em;
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: auto;
 }
 
-#inputs {
-  width: 50%;
-  margin: auto;
-  display: flex;
-  justify-content: space-evenly;
+#nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+    border-bottom: 1px solid transparent;
+    transition:border-bottom 300ms;
 }
 
-#inputs p {
-  font-size: 1.75em;
+#nav a:hover {
+    border-bottom: 1px solid currentColor;
 }
 
-#results {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#projects-main {
+    width: 70%;
+    margin: auto;
 }
 
-div {
-  text-align: center;
+#projects-main h2 {
+    font-size: 2em;
 }
 
-#love {
-  font-size: 2em;
+#main-top, #projects-main h2 {
+    text-align: center;
 }
 
-.hidden * {
-  display: none;
+.projectcard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4em;
 }
 
-.heart {
-  display:inline-block;
-  width: 150px; 
-  aspect-ratio: 1;
-  border-image: radial-gradient(rgba(255, 72, 72, 0.726) 69%,#0000 70%) 84.5% fill/100%;
-  clip-path: polygon(-41% 0,50% 91%, 141% 0);
+.projectcard h3 {
+    font-size: 2em;
+    margin-bottom: 0;
 }
 
-.heart:hover {
-  cursor: pointer;
-  width: 175px;
+.projectcard p {
+    margin-top: 0;
 }
 
+.projectcard img {
+    height: 20em;
+    width: 20em;
+    border-radius: 10%;
+    border: 1px solid black;;
+}
+
+.projectcard hr {
+    width: 30%;
+    margin-left: 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.projectcard h3, .projectcard p {
+    text-align: left;
+}
+
+.projectcard section {
+    width: 40%;
+    margin-bottom: 3em;
+    margin-left: 1em;
+}
